@@ -1,0 +1,7 @@
+*.aux
+*.glo
+*.ist
+*.log
+*.pdf
+*.synctex.gz
+*.bib.sav.tmp
