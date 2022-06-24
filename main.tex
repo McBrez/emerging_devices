@@ -8,7 +8,6 @@
 \usepackage{textcomp}
 \usepackage[table,xcdraw]{xcolor}
 \usepackage{cleveref}
-\usepackage{todonotes}
 \usepackage{pdflscape}
 \usepackage{tabularx}
 \usepackage{url}
@@ -19,36 +18,52 @@
 \usepackage{caption}
 \usepackage{newfloat}
 
+\newcommand\note[1]{\textcolor{gray}{\textit{#1}}}
+% \renewcommand\note[1]{}
+
 \makeglossaries
-\input{glossary}
+\input{glossary.tex}
 
 \begin{document}
 
-\title{2D Gas sensors}
+\title{2D TMD Heterojunction Gas Sensors}
 
-\author{\IEEEauthorblockN{David Freismuth
-\\
+\author{
+\IEEEauthorblockN{David Freismuth}
+\IEEEauthorblockA{
 TU Wien, Vienna, Austria \\ 
 Institute for Microelectronics \\
 e1326907@student.tuwien.ac.at
 }
-\thanks{This paper has been created under the supervision of Dr. Lado Filipovic}
+\and
+\IEEEauthorblockN{Lado Filipovic}
+\IEEEauthorblockA{
+TU Wien, Vienna, Austria \\ 
+Institute for Microelectronics \\
+filipovic@iue.tuwien.ac.at
+}
+
 }
 
 \maketitle
 
-\input{01_abstract/abstract.tex}
+\begin{abstract}
+Dummy abstract.
+\end{abstract}
 
 \begin{IEEEkeywords}
-Dummy keyword
+2D, Heterojunction, TMD, gas sensor
 \end{IEEEkeywords}
 
-\input{02_introduction/introduction.tex}
+\input{01_introduction/introduction.tex}
+\input{02_functionality/functionality.tex}
+\input{03_fabrication/fabrication.tex}
+\input{04_2d_tmd_heterojunction_gas_sensors/2d_tmd_heterojunction_gas_sensors.tex}
 \input{99_conclusion/conclusion.tex}
 
 \bibliographystyle{IEEEtran}
 \bibliography{lib/emerging_devices}
 
-\printglossary
+\printglossaries
 
 \end{document}
