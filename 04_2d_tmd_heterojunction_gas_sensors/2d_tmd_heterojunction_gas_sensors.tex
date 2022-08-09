@@ -1,3 +1,41 @@
 \section{2D TMD Heterojunction Gas Sensors}
 \label{sec:2d_tmd_heterojunction_gas_sensors}
 \note{Two 2D TMD heterojunction gas sensors \cite{Kim2020, Liu2021} shall be presented in detail. Their differences in fabrication/performance/scaleability/etc. shall be analyzed. They shall also be compared to conventional gas sensors. Problems that hinder a large scale production shall be identified and possible solution attempts shall be presented.}
+
+\gibberish{As has been stated earlier in this publication, \gls{tmd} gas sensor are very promising in regards to being the next generation of gas sensors. However, there large scale application has yet to be seen. This section shall identify why this is not yet the case. To do that, two gas sensors and their design philosophies shall be shown in detail. Their performance, longevity, scalebality and potential for mass fabrication shall be analyzed and shall be compared to conventional gas sensors.  \\
+The first sensor (Sensor 1) is the one proposed by \cite{Kim2020}. It is based on an WSe2/ WS2  heterojunction. The WSe2 film has been exposed to the environment. As it exhibits p-type semiconductor properties, it is especially sensitive to the electron accepting NO2 gas. As explained in \Cref{sec:functionality}, one advantage of heterojunction based gas sensors is the increased sensitivity to gas adsorption. The proposed sensor exhibits another favorable property: A photovoltaic effect. When light of \SI{1000}{\kilo\cd} is shone onto the sensor, a voltage of \SI{5}{\kilo\volt} is generated.  This effect implies, that the sensor does not have to be supplied with an external voltage and that the current, induced by the photovoltaic effect, can be utilized as measurement signal. The layer thickness of both materials was part of a compromise between the magnitude of the photovoltaic effect, and the revovery time of the sensor. A greater layer thickness would increase the photovoltaic effect however, the recovery time of the sensor at room temperature would have been increased. It has been decided to fabricate the sensor with three layers of WSe2 and WS2 respectivelly, resulting in an overall thickness of \SI{4.5}{\nano\meter} (excluding the substrate). The niceness of the layers has been verified via Raman spectroscopy \gls{tem}, \gs{afm} and \gls{eds}. \\
+The second sensor (Sensor 2), that shall be discussed, has been fabricated by \cite{Liu2021}. Its strategy is to intentionally pollute MoS2 nanosheets with ZnS in order to generate lots of hetrojunctions, dotted around the surface of the sensor. These impurity sites, for once, create small space charge regions, which modulate the conductivity of the material. Additionally to that, these sites provide docking sites for the analyte gas. This effectivelly increases the adsorption rate of the sensor and thus increases its sensitivity. The sensor does not have photovolotaic properties. The Measurement principle is therefore purely resistive.\\
+\subsection{Sensing Performance}
+The sensing performance of a gas sensor is usually quantified by its response value $R$. This value is a ratio of its primary measurement parameter in a clean environment and within an environment with specific gas concentration. \Cref{eqn:respone_1,eqn:respone_2,eqn:respone_3} show a few common definitions of the response metric.
+\begin{equation}
+\label{eqn:respone_1}
+    R = \frac{R_a}{R_g}
+\end{equation}
+\begin{equation}
+\label{eqn:respone_2}
+    R = \frac{I_a}{I_g}
+\end{equation}
+\begin{equation}
+\label{eqn:respone_3}
+    R = \frac{\Delta I_a}{I_g}
+\end{equation}
+As Sensor 1 relies on current measurement and Sensor 2 on modulation of the conductivity, the response definition from \Cref{eqn:respone_1} and \Cref{eqn:respone_3} shall be used respectivelly. \\ 
+Closely related to the response metric of a gas sensor is the lower detection limit $c_{min}$. It specifies the lowest anaylte gas concentration the sensor is able to detect. It is mainly determined by the response and background noise of the sensor. The U.S. Environmental Protection Agency recomands an exposure limit to NO2 of \Si{53}{ppb}. Ideally, the detection limit of gas sensors should be below that value. \\
+Another important characteristic is the recovery time $t_r$. It defines how the fast the sensor reacts to changes in gas concentration. Usually it is measured by subjecting the sensor to a specific analyte gas concentration. The recovery time is the time that passes until the sensor reaches \Si{90}{\%} of its final value. \\
+\\
+Sensor 1 has an response of xxx at a NO2 concentration of XXXppm. Sensor 2 shows a response of YYYppm at the same concentration. The detection limit lies at XXX ppm and yyyppm respectively. Both sensors have been evaluated at room temperature (25°C). The recovery time has been measured to be XXXs and YYYs respectively. 
+The quantum nano dot approach of sensor 1 shows that recovery time has been improved significantly. blabla
+\input{04_2d_tmd_heterojunction_gas_sensors/tbl/sensor_comparison}
+\subsection{Fabrication}
+Sensor 1 is fabricated by an 6 step process. Starting point is a \Gls{soi} wafer, which has been cleaned with acetone, \gls{ipa} and deionized water.  The WS2 film was deposited by reacting tungsten hexachloride (WCl6) and hydrogen sulfide (H7S) in a \gls{cvd} process. In the same process , WCl6 and Diethylselenide (DESe) has been combined to WSe2. A second substrate has been prepared, where the gold bottom electrode has been prepared. The WS2/WSe2 structure has been transfered onto to gold electrode. Eventually, the palladium top electrode has been patterned onto the WS2/WSe2 structure. \Cref{fig:fabrication} depicts this process.\\
+The fabrication of Sensor 2 starts with the fabrication of the MoS2 nano sheets. For that, a grinding-assisted liquid-phase exfoliation method was used. This method included grinding, dissolvation, vigorous sonication and multiple centrifucation of MoS2 powders. The nanosheets could be obtained from the precipants of that process.   
+%CH3COO)2⋅2H2O and 0.060 mmol Na2S⋅9H2O were dissolved into 120 mL, 30 mL, and 15 mL deionized water, respectively, followed by vigorous sonication to form a homogeneous dispersion. Subsequently, the Zn(CH3COO)2⋅2H2O solution was added dropwise into the MoS2 solution and stirred for 20 min. Then, the Na2S⋅9H2O solution was dropped into the above solution with stirring for 5 h. The MoS2/ZnS heterostructures were collected by centrifugation and washed with ethanol and deionized water for several times. Moreover, as listed in Table S1, different molar amounts (0.015, 0.030, 0.043 and 0.100 mmol) of Zn(CH3COO)2.2H2O were respectively dropped into MoS2 solution (0.300 mmol) with the stoichiometric amounts of Na2S⋅9H2O (0.015, 0.030, 0.043 and 0.100 mmol). In this work, the MoS2/ZnS heterostructures were named by the molar ratios between the MoS2 and ZnS. The samples prepared with different amounts of Zn (CH3COO)2⋅2H2O (0.015, 0.030, 0.043,0.060 and 0.100 mmol) were named to be MZ-20, MZ-10, MZ-7, MZ-5, and MZ-3, respectively
+%The grinding-assisted liquid-phase exfoliation method was employed to prepare MoS2 nanosheets with the following procedure. All experimental procedures are operated at room temperature (25 ◦C) unless otherwise specified. Firstly, 100 mg MoS2 powders were ground for 2 h, during which an appropriate amount of acetonitrile was added. Subsequently, the obtained powders were dried for 12 h at 60 ◦C in vacuum. Then, the resulting powders were dissolved into 50 mL ethanol/water mixture (45 vol%), followed by vigorous sonication for 3 h at 200 W [10]. The resulting products were centrifuged at 1500 rpm for 30 min to obtain the supernatant. After being centrifuged at 8000 rpm for 20 min, the precipitants containing MoS2 nanosheets were collected. Finally, MoS2 nanosheets were obtained by drying the precipitants at 60 ◦C for 12 h. We named the prepared MoS2 nanosheets to be M in our work.
+\begin{figure}
+    \includegraphics]{}
+    \caption{The fabrication processes of Sensor 1 and Sensor 2.}
+    \label{fig:fabrication}
+\end{figure}
+\subsection{Stablity}
+\subsection{Scalebility}
+}
